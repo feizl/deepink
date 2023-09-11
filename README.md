@@ -1,1 +1,1 @@
-书源：https://gitee.com/feizl/deepink/blob/master/repository.json
+书源：https://cdn.jsdelivr.net/gh/feizl/deepink@master/repository.json
