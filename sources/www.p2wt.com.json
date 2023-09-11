@@ -1,9 +1,9 @@
 {
-    "name": "笔趣阁",
+    "name": "笔趣阁p2wt",
     "url": "www.p2wt.com",
     "version": 100,
     "search": {
-        "url": "https://www.p2wt.com/user/search.html?q=${key}",
+        "url": "https://www.p2wt.com/user/hm.html?q=${key}",
         "charset": "utf-8"
     },
     "detail": {
