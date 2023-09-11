@@ -5,12 +5,12 @@
     "search": {
         "url": "https://www.p2wt.com/user/search.html?q=${key}",
         "charset": "utf-8",
-        "list": ".bookbox",
-        "name": "h4 > a",
-        "author": ".author@match->(?<=作者：)(.+)",
-        "cover": ".bookimg > a > img",
+        "list": "$.url_list",
+        "name": "$.articlename",
+        "author": "$.author",
+        "cover": "$.url_img",
         "summary": "p",
-        "detail": "h4 > a"
+        "detail": "$.intro"
     },
     "detail": {
         "name": "meta[property=og:title]@attr->content",
@@ -23,8 +23,8 @@
         "catalog": ""
     },
     "catalog": {
-        "list": ".listmain > dl > dd:gt(6)",
-        "name": "a",
+        "list": "$.url_list",
+        "name": "$.articlename",
         "chapter": "a"
     },
     "chapter": {
