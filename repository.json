@@ -1,0 +1,33 @@
+[
+    {
+        "name": "笔趣阁",
+        "url": "www.p2wt.com",
+        "version": 100,
+        "search": {
+            "url": "https://www.p2wt.com/user/search.html?q=${key}",
+            "charset": "utf-8"
+        },
+        "detail": {
+            "name": "",
+            "author": "",
+            "cover": "",
+            "summary": "",
+            "status": "meta[property=og:novel:status]@attr->content",
+            "update": "meta[property=og:novel:update_time]@attr->content",
+            "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+            "catalog": ""
+        },
+        "catalog": {
+            "list": ".chapter:nth-child(11) > li",
+            "page": ".right > a",
+            "name": "a",
+            "chapter": "a"
+        },
+        "chapter": {
+            "content": "#nr1",
+            "purify": ["&"],
+            "filter": ["@p.readinline"],
+            "page": "#pb_next:matches(下一页)"
+        }
+    }
+]
